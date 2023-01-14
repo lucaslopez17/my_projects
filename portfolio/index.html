@@ -6,53 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Lopez - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Consolas&display=swap" rel="stylesheet">
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/1b406d1f6f.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <header>
+<body id="begin">
+
+    <header id="home">
         <nav>
+            <div id="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#begin" data-url="home">Home</a></li>
+                <li><a href="#aboutme" data-url="aboutme">About me</a></li>
+                <li><a href="#projects" data-url="projects">Projects</a></li>
+                <li><a href="#certifications" data-url="certifications">Certifications</a></li>
+                <li><a href="#contact" data-url="contact">Contact</a></li>
             </ul>
+
         </nav>
+
     </header>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at semper ipsum. Curabitur malesuada, ligula
-                id tincidunt viverra, nibh risus maximus quam, a pretium elit odio vel justo.</p>
+    <!--Fin del header-->
+    <section id="about">
+        <!--Lado izquierdo-->
+        <section id="left">
+            <div id="text">
+                <p>Welcome, I am</p>
+                <h1>Lucas Lopez</h1>
+                <p id="webdev">Web Developer</p>
+            </div>
+            <div id="dowload">
+                <a href="./cv.pdf" download="CV_Lucas_Lopez.pdf">Download CV</a>
+            </div>
+            <div id="social">
+
+            </div>
         </section>
-        <section id="projects">
-            <h1>My Projects</h1>
-            <ul>
-                <li>
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at semper ipsum.</p>
-                    <a href="#">View Project</a>
-                </li>
-                <li>
-                    <h2>Project 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at semper ipsum.</p>
-                    <a href="#">View Project</a>
-                </li>
-            </ul>
+
+        <!--Lado derecho-->
+        <section id="right">
+            <div id="foto">
+                <img id='profile' src="./img/profile.png" alt="profilepic">
+            </div>
         </section>
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+    </section>
+
+
+    <!--Content Section Start-->
+
+    <!--About me start-->
+    <section id="aboutme">
+        <h2>About me</h2>
+        <div id="info">
+            <h3>Information</h3>
+            <p>Hello, my name is Lucas Lopez, I am taking my first steps in the world of web development and
+                applications. I am self-taught, and I like to spend a lot of time exploring development tools until I
+                master them.</p>
+        </div>
+        <div id="experience">
+            <h3>Work experience</h3>
+            <p>I am looking for my first job as a developer, but I have worked independently and collaborated on several
+                web development projects that include technologies such as HTML, CSS, Javascript and Wordpress.</p>
+        </div>
+        <div id="knowint">
+            <div id="knowledge">
+                <h3>Knolwledge</h3>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-square-js"></i> Javascript</li>
+                    <li><i class="fa-brands fa-wordpress"></i> Wordpress</li>
+                    <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                    <li><i class="fa-brands fa-react"></i> React</li>
+                </ul>
+            </div>
+            <div id="interest">
+                <h3>Interest</h3>
+                <ul>
+                    <li><i class="fa-solid fa-music"></i> Music</li>
+                    <li><i class="fa-regular fa-futbol"></i> Soccer</li>
+                    <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                </ul>
+
+            </div>
+
+            <div id="languages">
+                <h3>Languages</h3>
+                <ul>
+                    <li><img src="./img/langs/spanish.svg.png" alt="spanish"> Spanish</li>
+                    <li><img src="./img/langs/english.svg.png" alt="english"> English (IELTS B2)</li>
+                    <li><img src="./img/langs/portuguese.svg.png" alt="portuguese"> Portuguese</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+    <!--About me end-->
+
+    <!--Projects Start-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projs">
+            <article id="proj">
+                <img src="./img/projects/iyf.com.ar.png" alt="fcc_webdesign">
+                <h4>Landing page</h4>
+                <p id="tec"><i class="fa-brands fa-wordpress"></i> <i class="fa-brands fa-css3-alt"></i></p>
+                <p id="status"><i class="fa-solid fa-circle"></i> online</p>
+            </article>
+
+        </div>
+    </section>
+    <!--Projects end-->
+
+    <!--Certifications Start-->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div id="certs">
+            <article id="cert">
+                <img src="./img/certs/fcc_webdesign.png" alt="fcc_webdesign">
+                <h4>Responsive Web Design</h4>
+                <p>FreeCodeCamp - 2023</p>
+            </article>
+
+            <article id="cert">
+                <img src="./img/certs/udemy_mastercss.png" alt="fcc_webdesign">
+                <h4>Master en CSS</h4>
+                <p>Udemy - 2022</p>
+            </article>
+
+            <article id="cert">
+                <img src="./img/certs/fcc_webdesign.png" alt="fcc_webdesign">
+                <h4>Certificado 1</h4>
+                <p>FreeCodeCamp - 2023</p>
+            </article>
+            <article id="cert">
+                <img src="./img/certs/fcc_webdesign.png" alt="fcc_webdesign">
+                <h4>Certificado 1</h4>
+                <p>FreeCodeCamp - 2023</p>
+            </article>
+        </div>
+    </section>
+    <!--Certifications end-->
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
     </main>
     <footer>
         <p>Copyright © 2023 Lucas Lopez</p>
